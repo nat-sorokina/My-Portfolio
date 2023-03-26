@@ -1,0 +1,32 @@
+details summary { 
+    cursor: pointer;
+  }
+  
+  details summary > * {
+    display: inline;
+  }
+  details > summary {
+    cursor: pointer;
+    padding: .5rem 1rem;
+  }
+  details > div {
+    border: 2px solid #fdb;
+    margin-top: 0;
+    padding: 1rem;
+  }
+  summary::marker {
+    content: "☞";
+    font-size: 25px;
+  }
+  i {
+    font-size: 25px;
+    color: black;
+  }
+  #skills-container {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 5px;
+}
+ 

@@ -36,9 +36,13 @@
         <div class="about-me-container"> <!--display:flex, flex-direction: column-->
             <div class="about-me-text-container">
                 <h2>About Me</h2>
+                <p>My name is Nataliia. I am originally from Ukraine. I lived in China for 11 years and I currently reside in the UK. </p>
+                <p>I used to be a teacher. I decided to change my career a year ago - and Codecademy is helping me a lot to proceed on my 
+                    new career path. </p> 
+                <p>I am studying Front-End Development and excited for this new challenge.</p> 
 
             </div>
-            <img src="" alt="A photo of Nataliia Sorokina">
+            <img src="./Images/my photo.jpg" alt="A photo of Nataliia Sorokina" height="500" width="350">
 
         </div> 
     </section>
@@ -47,19 +51,50 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <!--for nice list markers this selector: ::marker {
-  color: red;
-  font-size: 23px;
-} ALso look into summary tag (list-style image property for css) and details tag-->
+        <details class="project">
+            <summary class="project-title">
+                <h3>Business Website</h3>
+            </summary>
+            <img src="./Images/business site snippet.png" height="500" alt="Snippet of a Business Website">
+            <p class="project-description">A project that I did on Codecademy. This is a one-page, responsive website for a school that offers
+                extracurricular English classes for Chinese students. HTML & CSS used. To see the full version, please click <a href="https://nat-sorokina.github.io/business-site/" target=”_blank”>here.</a></p>
+        </details>
 
-        </div>
+        <details class="project">
+            <summary class="project-title">
+                <h3>Club Website</h3>
+            </summary>
+            <img src="./Images/club site snippet.png" height="500" alt="A snippet of a Dog Owners' Club site">
+            <p class="project-description">A project that I did on Codecademy. This is a one-page, responsive website for a Dog Owners' Club. HTML & CSS used.
+                To see full version, please click <a href="https://nat-sorokina.github.io/club-site/" target=”_blank”>here.</a> </p>
+        </details>
+
+        <details class="project">
+            <summary class="project-title">
+                <h3>Credit Card Checker</h3>
+            </summary>
+            <img src="./Images/credit card checker project snippet.png" width="700" alt="Credit card checker project snippet">
+            <p class="project-description">A project that I did on Codecademy. It's written in Javascript and it checks given credit card numbers 
+                and returns a list of companies that issued an invalid card. To see the project, please follow this <a href="https://github.com/nat-sorokina/credit-card-checker.git" target=”_blank”>link.</a>
+            </p>
+        </details>
+
+        
     </section>
 
 <!--Skills-->
 
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-container"> <!--display: flex;
+        <div id="skills-container">
+            <i class="fa fa-html5"></i>
+            <i class="fa fa-css3-alt"></i>
+            <i class="fa fa-brands fa-js"></i>
+            <i class="fa fa-brands fa-git"></i>
+            <i class="fa fa-chrome"></i>
+            <i class="fa fa-terminal"></i>
+            <i class="fa fa-node"></i>
+            <i class="fa fa-github"></i> <!--display: flex;
             width: 100%;
             justify-content: space-between;
             flex-wrap: wrap; 
@@ -72,8 +107,7 @@
 <!--Footer-->
 
   <footer>
-    Proud Ukrainian 
-    <img src="./ukraine.png" alt="Ukraine flag"/>
+    Stand With <img src="./Images/ukraine.png" alt="Ukraine flag"/>
   </footer>
 
   <script></script>
